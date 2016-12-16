@@ -1,0 +1,43 @@
+<config>
+	<!-- Main config -->
+	<cfg name="DebugMode" value="1" type="Boolean" change="0" />
+	<cfg name="deCrash" value="1" type="Boolean" change="0" />
+	<cfg name="passLoadScreen" value="1" type="Boolean" change="1" />
+	<cfg name="passLoadScreenF" value="0" type="Boolean" change="1" />
+	<cfg name="passUpdateScreen" value="1" type="Boolean" change="1" />
+	<cfg name="passQuitScreen" value="0" type="Boolean" change="1" />
+	<cfg name="UIParallax" value="1" type="Boolean" change="1" />
+	<cfg name="fullScreen" value="1" type="Boolean" change="1" />
+	<!-- Language -->
+	<cfg name="Language" value="zh-CN" type="Language" change="1" />
+	<!-- Address config -->
+	<cfg name="Graphic" value="Graphics/" type="text" change="1" />
+	<cfg name="Audio" value="Audio/" type="text" change="1" />
+	<cfg name="LanguageAddress" value="language/" type="text" change="1" />
+	<cfg name="Framework" value="frameworks/" type="text" change="1" />
+	<cfg name="Applications" value="Applications/" type="text" change="1" />
+	<cfg name="homeApp" value="TDW3_MAIN_HOME/" type="text" change="1" />
+	<!-- NameSpace config -->
+	<cfg name="mainApp" value="mainApp.swf" type="text" change="1" />
+	<cfg name="dreamFramework" value="dreamFramework.swf" type="text" change="1" />
+	<!-- UI Screen config -->
+	<cfg name="initingScreen" value="initing.swf" type="text" change="1" />
+	<cfg name="updatingScreen" value="update.swf" type="text" change="1" />
+	<cfg name="loadingScreen" value="loading.swf" type="text" change="1" />
+	<cfg name="quitingScreen" value="quiting.swf" type="text" change="1" />
+	<!-- UI Graphic address config -->
+	<cfg name="gui" value="ui/" type="text" change="1" />
+	<cfg name="res" value="res/" type="text" change="1" />
+	<cfg name="picture" value="picture/" type="text" change="1" />
+	<cfg name="background" value="bg/" type="text" change="1" />
+	<cfg name="other" value="other/" type="text" change="1" />
+	<!-- UI Graphic config -->
+	<cfg name="black" value="black.png" type="text" change="1" />
+	<!-- Audio config -->
+	<cfg name="music_vol" value="50" type="text" change="1" />
+	<cfg name="voice_vol" value="50" type="text" change="1" />
+	<cfg name="sound_vol" value="50" type="text" change="1" />
+	<cfg name="music_addr" value="music/" type="text" change="1" />
+	<cfg name="voice_addr" value="voice/" type="text" change="1" />
+	<cfg name="sound_addr" value="sound/" type="text" change="1" />
+</config>
