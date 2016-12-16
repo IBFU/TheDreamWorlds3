@@ -31,9 +31,12 @@ Test
 #uploadUpdPackage()
 #pause()
 #print f.getVersion()
-print f.getVersion()
-f.uploadUpdDatabase()
-f.applyUpdDatabase()
+
+# print f.getVersion()
+# f.uploadUpdDatabase()
+# f.applyUpdDatabase()
+
+f.cpVersion()
 '''
 /Test
 '''

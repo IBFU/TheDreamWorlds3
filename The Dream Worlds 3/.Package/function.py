@@ -15,8 +15,8 @@ import urllib2
 
 noUpdFolder=c.config['noUpdFolder']
 addrIP=c.config['engineIP']
-addrFolder=c.config['gamecoreFolder']+c.config['updateDir']
-addrAddress=c.config['gamecoreServer']+c.config['updateDir']
+addrFolder=c.config['coreFolder']+c.config['updateDir']
+addrAddress=c.config['coreServer']+c.config['updateDir']
 
 versionList={}
 
@@ -50,10 +50,11 @@ def package(dirname,zipfilename):#打包，参数：文件（夹）名，包名�
 		fileNumber=0
 		for tar in filelist:
 			#arcname = tar[len(dirname):]
+			# arcname = tar.decode('GBK','ignore')
 			arcname = tar
 			print '#Package File: %s' %(arcname)
 			#print 'tar: %s len(dirname): %s arcname: %s' %(tar,len(dirname),arcname)
-			zf.write(tar,arcname)
+			zf.write(tar.decode('mbcs','ignore'),arcname.decode('mbcs','ignore'))
 			fileNumber+=1
 		zf.close()
 		print '#Package File number; %s' %(fileNumber)
@@ -164,6 +165,36 @@ def getVersion():
 	return versionStr
 
 def cpVersion():
+	f = open('_Version.inf')
+	verName=''
+	verFull=[]
+	verMain=''
+	verBuild=''
+	verDate=''
+	try:
+		devText=f.read()
+		devArray=devText.replace(']','[').replace('\r','').replace('\n','').split('[')
+		for d in devArray:
+			if d[0:2]=='**':
+				verName=d.split('**')[1]
+			if d[0:1]!='{' and d[0:1]!='-' and d[0:1]!='*':
+				verFull.append(d)
+	except:
+		pass
+	f.close()
+	verFull=verFull[1].split(' ')
+	verMain='%s.%s' %(verFull[0].split('.')[0],verFull[0].split('.')[1])
+	verBuild=verFull[0].split('.')[2]
+	verDate=verFull[1]
+	# print verName,verMain,verBuild,verDate
+	verXML='<Version>\n\t<ver key="mainVersion" value="%s"/>\n\t<ver key="buildVersion" value="%s"/>\n\t<ver key="dateVersion" value="%s"/>\n\t<ver key="versionName" value="%s"/>\n</Version>' %(verMain,verBuild,verDate,verName)
+	print '\n%s' %(verXML)
+	try:
+		fw = open('config\\version.xml', 'w')
+		fw.write(verXML)
+	except:
+		pass
+	fw.close()
 	cmd('copy /y config\\version.xml .Update\\config\\')
 	cmd('copy /y engine\\version.xml .Update\\engine\\')
 
@@ -184,17 +215,17 @@ def uploadUpdPackage():
 def uploadUpdDatabase():
 	getVersion()
 	#strHtml = urllib2.urlopen(addrAddress).read()
-	strHtml = urllib2.urlopen('%supd_database.php?state=updversion&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'])).read()
+	strHtml = urllib2.urlopen('%supd_database.php?state=updversion&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'].replace(' ','%20'))).read()
 	print strHtml
 
 def applyUpdDatabase():
 	getVersion()
-	strHtml = urllib2.urlopen('%supd_database.php?state=applyupdate&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'])).read()
+	strHtml = urllib2.urlopen('%supd_database.php?state=applyupdate&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'].replace(' ','%20'))).read()
 	print strHtml
 
 def revokeUpdDatabase():
 	getVersion()
-	strHtml = urllib2.urlopen('%supd_database.php?state=revokeupdate&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'])).read()
+	strHtml = urllib2.urlopen('%supd_database.php?state=revokeupdate&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'].replace(' ','%20'))).read()
 	print strHtml
 
 def revokeUpdDatabaseV(mainV,buildV,dateV,vName):

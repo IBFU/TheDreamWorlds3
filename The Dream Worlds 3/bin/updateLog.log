@@ -1,0 +1,278 @@
+2016-12-16 18:37:58 -> ===Update start===
+2016-12-16 18:37:58 -> TestMode: 0
+2016-12-16 18:37:58 -> getPackageList
+2016-12-16 18:37:58 -> getVersion
+2016-12-16 18:37:58 -> Version String: 3.0.1.20161216
+2016-12-16 18:37:58 -> getVersionURL: http://dr.ibfu.org/index/tdw3/update/upd_getpackage.php?istest=0&mainVersion=3.0&buildVersion=1&dateVersion=20161216&versionName=Milestone%201
+2016-12-16 18:37:58 -> ServerState: update_3.0.3.20161216.zip
+2016-12-16 18:37:58 -> updating
+2016-12-16 18:37:58 -> updlist: ['update_3.0.3.20161216.zip']
+2016-12-16 18:37:58 -> outState: updating&updlist=['update_3.0.3.20161216.zip']
+2016-12-16 18:37:58 -> downloadPackage
+2016-12-16 18:37:58 -> Download Files addrServer: http://dr.ibfu.org/index/tdw3/update/
+2016-12-16 18:37:58 -> Server File: http://dr.ibfu.org/index/tdw3/update/update_3.0.3.20161216.zip
+2016-12-16 18:37:58 -> Local File: ./update_3.0.3.20161216.zip
+2016-12-16 18:37:58 -> Return: True
+2016-12-16 18:37:58 -> Package download: update_3.0.3.20161216.zip True
+2016-12-16 18:38:00 -> applyPackage
+2016-12-16 18:38:00 -> unPackage File
+2016-12-16 18:38:00 -> #zipfilename: update_3.0.3.20161216.zip #unziptodir: update\
+2016-12-16 18:38:00 -> #FileList: ['DreamIco.fla2', 'DreamIco.ico', 'DreamIco.png', 'Applications/TDW3_MAIN_HOME/mainApp.fla2', 'Applications/TDW3_MAIN_HOME/mainApp.swf', 'Applications/TDW3_MAIN_HOME/language/zh-CN.xml', 'engine/version.xml', 'frameworks/dreamFramework.fla2', 'frameworks/dreamFramework.swf', 'frameworks/dreamUIBackground.fla2', 'frameworks/dreamUIBackground.swf', 'frameworks/dreamUIC.fla2', 'frameworks/dreamUIC.swf', 'frameworks/dreamUIDebug.fla2', 'frameworks/dreamUIDebug.swf', 'frameworks/dreamUIListener.fla2', 'frameworks/dreamUIListener.swf', 'frameworks/mainForm.fla2', 'frameworks/mainForm.swf', 'frameworks/com/transitions/BgHigh.as', 'frameworks/com/transitions/BgTween.as']
+2016-12-16 18:38:00 -> #Unpackage File: DreamIco.fla2
+2016-12-16 18:38:00 -> #EXT_Dir: update
+2016-12-16 18:38:00 -> #EXT_Filename: update\DreamIco.fla2
+2016-12-16 18:38:00 -> #Unpackage File: DreamIco.ico
+2016-12-16 18:38:00 -> #EXT_Dir: update
+2016-12-16 18:38:00 -> #EXT_Filename: update\DreamIco.ico
+2016-12-16 18:38:00 -> #Unpackage File: DreamIco.png
+2016-12-16 18:38:00 -> #EXT_Dir: update
+2016-12-16 18:38:00 -> #EXT_Filename: update\DreamIco.png
+2016-12-16 18:38:00 -> #Unpackage File: Applications/TDW3_MAIN_HOME/mainApp.fla2
+2016-12-16 18:38:00 -> #EXT_Dir: update\Applications/TDW3_MAIN_HOME
+2016-12-16 18:38:00 -> #EXT_Filename: update\Applications/TDW3_MAIN_HOME/mainApp.fla2
+2016-12-16 18:38:00 -> #Unpackage Path Mkdir: update\Applications/TDW3_MAIN_HOME
+2016-12-16 18:38:00 -> #Unpackage File: Applications/TDW3_MAIN_HOME/mainApp.swf
+2016-12-16 18:38:00 -> #EXT_Dir: update\Applications/TDW3_MAIN_HOME
+2016-12-16 18:38:00 -> #EXT_Filename: update\Applications/TDW3_MAIN_HOME/mainApp.swf
+2016-12-16 18:38:00 -> #Unpackage File: Applications/TDW3_MAIN_HOME/language/zh-CN.xml
+2016-12-16 18:38:00 -> #EXT_Dir: update\Applications/TDW3_MAIN_HOME/language
+2016-12-16 18:38:00 -> #EXT_Filename: update\Applications/TDW3_MAIN_HOME/language/zh-CN.xml
+2016-12-16 18:38:00 -> #Unpackage Path Mkdir: update\Applications/TDW3_MAIN_HOME/language
+2016-12-16 18:38:00 -> #Unpackage File: engine/version.xml
+2016-12-16 18:38:00 -> #EXT_Dir: update\engine
+2016-12-16 18:38:00 -> #EXT_Filename: update\engine/version.xml
+2016-12-16 18:38:00 -> #Unpackage Path Mkdir: update\engine
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamFramework.fla2
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamFramework.fla2
+2016-12-16 18:38:01 -> #Unpackage Path Mkdir: update\frameworks
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamFramework.swf
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamFramework.swf
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIBackground.fla2
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIBackground.fla2
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIBackground.swf
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIBackground.swf
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIC.fla2
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIC.fla2
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIC.swf
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIC.swf
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIDebug.fla2
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIDebug.fla2
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIDebug.swf
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIDebug.swf
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIListener.fla2
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIListener.fla2
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/dreamUIListener.swf
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/dreamUIListener.swf
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/mainForm.fla2
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/mainForm.fla2
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/mainForm.swf
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/mainForm.swf
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/com/transitions/BgHigh.as
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks/com/transitions
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/com/transitions/BgHigh.as
+2016-12-16 18:38:01 -> #Unpackage Path Mkdir: update\frameworks/com/transitions
+2016-12-16 18:38:01 -> #Unpackage File: frameworks/com/transitions/BgTween.as
+2016-12-16 18:38:01 -> #EXT_Dir: update\frameworks/com/transitions
+2016-12-16 18:38:01 -> #EXT_Filename: update\frameworks/com/transitions/BgTween.as
+2016-12-16 18:38:01 -> Unpackage File number: 21
+2016-12-16 18:38:01 -> Package apply: update_3.0.3.20161216.zip True
+2016-12-16 18:38:01 -> Package drop: update_3.0.3.20161216.zip
+2016-12-16 18:38:01 -> updFinish
+2016-12-16 18:38:01 -> outState: updFinish
+2016-12-16 18:38:06 -> outState: 
+2016-12-16 18:38:06 -> ===Update end===
+
+2016-12-16 18:38:56 -> ===Update start===
+2016-12-16 18:38:56 -> TestMode: 0
+2016-12-16 18:38:56 -> getPackageList
+2016-12-16 18:38:56 -> getVersion
+2016-12-16 18:38:56 -> Version String: 3.0.1.20161216
+2016-12-16 18:38:56 -> getVersionURL: http://dr.ibfu.org/index/tdw3/update/upd_getpackage.php?istest=0&mainVersion=3.0&buildVersion=1&dateVersion=20161216&versionName=Milestone%201
+2016-12-16 18:38:56 -> ServerState: update_3.0.3.20161216.zip
+2016-12-16 18:38:56 -> updating
+2016-12-16 18:38:56 -> updlist: ['update_3.0.3.20161216.zip']
+2016-12-16 18:38:56 -> outState: updating&updlist=['update_3.0.3.20161216.zip']
+2016-12-16 18:38:56 -> downloadPackage
+2016-12-16 18:38:56 -> Download Files addrServer: http://dr.ibfu.org/index/tdw3/update/
+2016-12-16 18:38:56 -> Server File: http://dr.ibfu.org/index/tdw3/update/update_3.0.3.20161216.zip
+2016-12-16 18:38:56 -> Local File: ./update_3.0.3.20161216.zip
+2016-12-16 18:38:56 -> Return: True
+2016-12-16 18:38:56 -> Package download: update_3.0.3.20161216.zip True
+2016-12-16 18:38:58 -> applyPackage
+2016-12-16 18:38:58 -> unPackage File
+2016-12-16 18:38:58 -> #zipfilename: update_3.0.3.20161216.zip #unziptodir: .\
+2016-12-16 18:38:58 -> #FileList: ['DreamIco.fla2', 'DreamIco.ico', 'DreamIco.png', 'Applications/TDW3_MAIN_HOME/mainApp.fla2', 'Applications/TDW3_MAIN_HOME/mainApp.swf', 'Applications/TDW3_MAIN_HOME/language/zh-CN.xml', 'engine/version.xml', 'frameworks/dreamFramework.fla2', 'frameworks/dreamFramework.swf', 'frameworks/dreamUIBackground.fla2', 'frameworks/dreamUIBackground.swf', 'frameworks/dreamUIC.fla2', 'frameworks/dreamUIC.swf', 'frameworks/dreamUIDebug.fla2', 'frameworks/dreamUIDebug.swf', 'frameworks/dreamUIListener.fla2', 'frameworks/dreamUIListener.swf', 'frameworks/mainForm.fla2', 'frameworks/mainForm.swf', 'frameworks/com/transitions/BgHigh.as', 'frameworks/com/transitions/BgTween.as']
+2016-12-16 18:38:58 -> #Unpackage File: DreamIco.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .
+2016-12-16 18:38:58 -> #EXT_Filename: .\DreamIco.fla2
+2016-12-16 18:38:58 -> #Unpackage File: DreamIco.ico
+2016-12-16 18:38:58 -> #EXT_Dir: .
+2016-12-16 18:38:58 -> #EXT_Filename: .\DreamIco.ico
+2016-12-16 18:38:58 -> #Unpackage File: DreamIco.png
+2016-12-16 18:38:58 -> #EXT_Dir: .
+2016-12-16 18:38:58 -> #EXT_Filename: .\DreamIco.png
+2016-12-16 18:38:58 -> #Unpackage File: Applications/TDW3_MAIN_HOME/mainApp.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\Applications/TDW3_MAIN_HOME
+2016-12-16 18:38:58 -> #EXT_Filename: .\Applications/TDW3_MAIN_HOME/mainApp.fla2
+2016-12-16 18:38:58 -> #Unpackage File: Applications/TDW3_MAIN_HOME/mainApp.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\Applications/TDW3_MAIN_HOME
+2016-12-16 18:38:58 -> #EXT_Filename: .\Applications/TDW3_MAIN_HOME/mainApp.swf
+2016-12-16 18:38:58 -> #Unpackage File: Applications/TDW3_MAIN_HOME/language/zh-CN.xml
+2016-12-16 18:38:58 -> #EXT_Dir: .\Applications/TDW3_MAIN_HOME/language
+2016-12-16 18:38:58 -> #EXT_Filename: .\Applications/TDW3_MAIN_HOME/language/zh-CN.xml
+2016-12-16 18:38:58 -> #Unpackage File: engine/version.xml
+2016-12-16 18:38:58 -> #EXT_Dir: .\engine
+2016-12-16 18:38:58 -> #EXT_Filename: .\engine/version.xml
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamFramework.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamFramework.fla2
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamFramework.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamFramework.swf
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIBackground.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIBackground.fla2
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIBackground.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIBackground.swf
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIC.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIC.fla2
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIC.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIC.swf
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIDebug.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIDebug.fla2
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIDebug.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIDebug.swf
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIListener.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIListener.fla2
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/dreamUIListener.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/dreamUIListener.swf
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/mainForm.fla2
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/mainForm.fla2
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/mainForm.swf
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/mainForm.swf
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/com/transitions/BgHigh.as
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks/com/transitions
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/com/transitions/BgHigh.as
+2016-12-16 18:38:58 -> #Unpackage File: frameworks/com/transitions/BgTween.as
+2016-12-16 18:38:58 -> #EXT_Dir: .\frameworks/com/transitions
+2016-12-16 18:38:58 -> #EXT_Filename: .\frameworks/com/transitions/BgTween.as
+2016-12-16 18:38:58 -> Unpackage File number: 21
+2016-12-16 18:38:58 -> Package apply: update_3.0.3.20161216.zip True
+2016-12-16 18:38:58 -> Package drop: update_3.0.3.20161216.zip
+2016-12-16 18:38:58 -> updFinish
+2016-12-16 18:38:58 -> outState: updFinish
+2016-12-16 18:39:03 -> outState: 
+2016-12-16 18:39:03 -> ===Update end===
+
+2016-12-16 18:40:58 -> ===Update start===
+2016-12-16 18:40:58 -> TestMode: 0
+2016-12-16 18:40:58 -> getPackageList
+2016-12-16 18:40:58 -> getVersion
+2016-12-16 18:40:58 -> Version String: 3.0.1.20161216
+2016-12-16 18:40:58 -> getVersionURL: http://dr.ibfu.org/index/tdw3/update/upd_getpackage.php?istest=0&mainVersion=3.0&buildVersion=1&dateVersion=20161216&versionName=Milestone%201
+2016-12-16 18:40:58 -> ServerState: update_3.0.3.20161216.zip
+2016-12-16 18:40:58 -> updating
+2016-12-16 18:40:58 -> updlist: ['update_3.0.3.20161216.zip']
+2016-12-16 18:40:58 -> outState: updating&updlist=['update_3.0.3.20161216.zip']
+2016-12-16 18:40:58 -> downloadPackage
+2016-12-16 18:40:58 -> Download Files addrServer: http://dr.ibfu.org/index/tdw3/update/
+2016-12-16 18:40:58 -> Server File: http://dr.ibfu.org/index/tdw3/update/update_3.0.3.20161216.zip
+2016-12-16 18:40:58 -> Local File: ./update_3.0.3.20161216.zip
+2016-12-16 18:40:58 -> Return: True
+2016-12-16 18:40:58 -> Package download: update_3.0.3.20161216.zip True
+2016-12-16 18:41:00 -> applyPackage
+2016-12-16 18:41:00 -> unPackage File
+2016-12-16 18:41:00 -> #zipfilename: update_3.0.3.20161216.zip #unziptodir: .\
+2016-12-16 18:41:00 -> #FileList: ['DreamIco.fla2', 'DreamIco.ico', 'DreamIco.png', 'Applications/TDW3_MAIN_HOME/mainApp.fla2', 'Applications/TDW3_MAIN_HOME/mainApp.swf', 'Applications/TDW3_MAIN_HOME/language/zh-CN.xml', 'engine/version.xml', 'frameworks/dreamFramework.fla2', 'frameworks/dreamFramework.swf', 'frameworks/dreamUIBackground.fla2', 'frameworks/dreamUIBackground.swf', 'frameworks/dreamUIC.fla2', 'frameworks/dreamUIC.swf', 'frameworks/dreamUIDebug.fla2', 'frameworks/dreamUIDebug.swf', 'frameworks/dreamUIListener.fla2', 'frameworks/dreamUIListener.swf', 'frameworks/mainForm.fla2', 'frameworks/mainForm.swf', 'frameworks/com/transitions/BgHigh.as', 'frameworks/com/transitions/BgTween.as']
+2016-12-16 18:41:00 -> #Unpackage File: DreamIco.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .
+2016-12-16 18:41:00 -> #EXT_Filename: .\DreamIco.fla2
+2016-12-16 18:41:00 -> #Unpackage File: DreamIco.ico
+2016-12-16 18:41:00 -> #EXT_Dir: .
+2016-12-16 18:41:00 -> #EXT_Filename: .\DreamIco.ico
+2016-12-16 18:41:00 -> #Unpackage File: DreamIco.png
+2016-12-16 18:41:00 -> #EXT_Dir: .
+2016-12-16 18:41:00 -> #EXT_Filename: .\DreamIco.png
+2016-12-16 18:41:00 -> #Unpackage File: Applications/TDW3_MAIN_HOME/mainApp.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\Applications/TDW3_MAIN_HOME
+2016-12-16 18:41:00 -> #EXT_Filename: .\Applications/TDW3_MAIN_HOME/mainApp.fla2
+2016-12-16 18:41:00 -> #Unpackage File: Applications/TDW3_MAIN_HOME/mainApp.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\Applications/TDW3_MAIN_HOME
+2016-12-16 18:41:00 -> #EXT_Filename: .\Applications/TDW3_MAIN_HOME/mainApp.swf
+2016-12-16 18:41:00 -> #Unpackage File: Applications/TDW3_MAIN_HOME/language/zh-CN.xml
+2016-12-16 18:41:00 -> #EXT_Dir: .\Applications/TDW3_MAIN_HOME/language
+2016-12-16 18:41:00 -> #EXT_Filename: .\Applications/TDW3_MAIN_HOME/language/zh-CN.xml
+2016-12-16 18:41:00 -> #Unpackage File: engine/version.xml
+2016-12-16 18:41:00 -> #EXT_Dir: .\engine
+2016-12-16 18:41:00 -> #EXT_Filename: .\engine/version.xml
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamFramework.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamFramework.fla2
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamFramework.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamFramework.swf
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIBackground.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIBackground.fla2
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIBackground.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIBackground.swf
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIC.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIC.fla2
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIC.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIC.swf
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIDebug.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIDebug.fla2
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIDebug.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIDebug.swf
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIListener.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIListener.fla2
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/dreamUIListener.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/dreamUIListener.swf
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/mainForm.fla2
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/mainForm.fla2
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/mainForm.swf
+2016-12-16 18:41:00 -> #EXT_Dir: .\frameworks
+2016-12-16 18:41:00 -> #EXT_Filename: .\frameworks/mainForm.swf
+2016-12-16 18:41:00 -> #Unpackage File: frameworks/com/transitions/BgHigh.as
+2016-12-16 18:41:01 -> #EXT_Dir: .\frameworks/com/transitions
+2016-12-16 18:41:01 -> #EXT_Filename: .\frameworks/com/transitions/BgHigh.as
+2016-12-16 18:41:01 -> #Unpackage File: frameworks/com/transitions/BgTween.as
+2016-12-16 18:41:01 -> #EXT_Dir: .\frameworks/com/transitions
+2016-12-16 18:41:01 -> #EXT_Filename: .\frameworks/com/transitions/BgTween.as
+2016-12-16 18:41:01 -> Unpackage File number: 21
+2016-12-16 18:41:01 -> Package apply: update_3.0.3.20161216.zip True
+2016-12-16 18:41:01 -> Package drop: update_3.0.3.20161216.zip
+2016-12-16 18:41:01 -> updFinish
+2016-12-16 18:41:01 -> outState: updFinish
+2016-12-16 18:41:06 -> outState: 
+2016-12-16 18:41:06 -> ===Update end===
+

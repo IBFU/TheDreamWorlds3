@@ -4,8 +4,8 @@
 	<cfg name="deCrash" value="1" type="Boolean" change="0" />
 	<cfg name="passLoadScreen" value="1" type="Boolean" change="1" />
 	<cfg name="passLoadScreenF" value="0" type="Boolean" change="1" />
-	<cfg name="passUpdateScreen" value="1" type="Boolean" change="1" />
-	<cfg name="passQuitScreen" value="0" type="Boolean" change="1" />
+	<cfg name="passUpdateScreen" value="0" type="Boolean" change="1" />
+	<cfg name="passQuitScreen" value="1" type="Boolean" change="1" />
 	<cfg name="UIParallax" value="1" type="Boolean" change="1" />
 	<cfg name="fullScreen" value="1" type="Boolean" change="1" />
 	<!-- Language -->

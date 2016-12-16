@@ -43,7 +43,7 @@ print('创建更新包……'),
 f.makeUpdPackage()
 print('DONE')
 print('上传更新包……'),
-f.uploadUpdPackage()
+# f.uploadUpdPackage()
 print('DONE')
 print('更新数据库……'),
 f.uploadUpdDatabase()
