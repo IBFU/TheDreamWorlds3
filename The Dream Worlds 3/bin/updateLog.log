@@ -121,3 +121,15 @@
 2016-12-17 18:05:55 -> outState: 
 2016-12-17 18:05:55 -> ===Update end===
 
+2016-12-18 01:25:26 -> ===Update start===
+2016-12-18 01:25:26 -> TestMode: 1
+2016-12-18 01:25:26 -> getPackageList
+2016-12-18 01:25:26 -> getVersion
+2016-12-18 01:25:26 -> Version String: 3.0.4.20161217
+2016-12-18 01:25:26 -> getVersionURL: http://dr.ibfu.org/index/tdw3/update/upd_getpackage.php?istest=1&mainVersion=3.0&buildVersion=4&dateVersion=20161217&versionName=Milestone%201
+2016-12-18 01:25:26 -> ServerState: 0
+2016-12-18 01:25:26 -> noUpdate
+2016-12-18 01:25:26 -> outState: noUpdate
+2016-12-18 01:25:31 -> outState: 
+2016-12-18 01:25:31 -> ===Update end===
+
