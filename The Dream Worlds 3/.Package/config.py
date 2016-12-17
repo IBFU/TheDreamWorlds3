@@ -12,5 +12,5 @@ config={
 	'coreServer':		'http://dr.ibfu.org/index/tdw3/',
 	'coreFolder':		'dreamui/dreamgames/',
 	'updateDir':		'update/',
-	'noUpdFolder':		['.backup','.Update','.Develop','.Packages'],
+	'noUpdFolder':		['.backup','.Update','.Develop','.Package'],
 '':''}

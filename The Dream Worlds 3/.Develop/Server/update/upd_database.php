@@ -10,7 +10,7 @@
 			exit();
 		}
 
-		$addrs = mysql_query("INSERT INTO tdw3_version VALUES(NULL,'$_GET[mainVersion]','$_GET[buildVersion]','$_GET[dateVersion]','$_GET[versionName]','0')");
+		$addrs = mysql_query("INSERT INTO tdw3_version VALUES(NULL,'$_GET[mainVersion]','$_GET[buildVersion]','$_GET[dateVersion]','$_GET[versionName]','$_GET[updfileType]','0')");
 		if($addrs){
 			echo "Updated version: $_GET[mainVersion].$_GET[buildVersion].$_GET[dateVersion] $_GET[versionName]";
 		}else{

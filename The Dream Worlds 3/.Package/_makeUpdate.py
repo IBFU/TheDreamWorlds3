@@ -12,6 +12,7 @@ import config as config
 from ftplib import FTP
 
 os.chdir('../')
+updfileType='exe'
 
 
 # addrIP="138.128.217.186"
@@ -37,16 +38,16 @@ print('创建更新目录……'),
 f.makeUpdDir()
 print('DONE')
 print('创建版本文件……'),
-f.cpVersion()
+f.cpVersion(updfileType)
 print('DONE')
 print('创建更新包……'),
-f.makeUpdPackage()
+f.makeUpdPackage(updfileType)
 print('DONE')
 print('上传更新包……'),
 # f.uploadUpdPackage()
 print('DONE')
 print('更新数据库……'),
-f.uploadUpdDatabase()
+f.uploadUpdDatabase(updfileType)
 print('DONE')
 print('更新包已上传完毕，目前只有测试模式才可更新。如果需要更新正式版，请执行_applyUpdate.py！')
 f.pause()

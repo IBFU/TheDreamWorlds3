@@ -29,7 +29,7 @@ def pause():
 def wait(t):
 	time.sleep(t)
 
-def package(dirname,zipfilename):#打包，参数：文件（夹）名，包名。dirname留空表示将当前目录内容添加入zip包
+def package_zip(dirname,zipfilename):#打包，参数：文件（夹）名，包名。dirname留空表示将当前目录内容添加入zip包
 	filelist = []
 	if os.path.isfile(dirname):
 		filelist.append('.\\%s' %(dirname))
@@ -54,7 +54,7 @@ def package(dirname,zipfilename):#打包，参数：文件（夹）名，包名�
 			arcname = tar
 			print '#Package File: %s' %(arcname)
 			#print 'tar: %s len(dirname): %s arcname: %s' %(tar,len(dirname),arcname)
-			zf.write(tar.decode('mbcs','ignore'),arcname.decode('mbcs','ignore'))
+			zf.write(tar,arcname)
 			fileNumber+=1
 		zf.close()
 		print '#Package File number; %s' %(fileNumber)
@@ -62,6 +62,11 @@ def package(dirname,zipfilename):#打包，参数：文件（夹）名，包名�
 	except Exception,e:
 		print '#ERROR: %s - %s' %(Exception,e)
 		return False
+
+
+def package(dirname,zipfilename):
+	print '#dirname: %s\\ #zipfilename: %s' %(dirname,zipfilename)
+	cmd('cd "%s" && ..\\.Package\\winrar\\rar.exe a -sfx -r -ed "..\\%s" "*"' %(dirname,zipfilename))
 
 def unpackage(zipfilename, unziptodir):#解包，参数：包名，文件夹名。unziptodir留空表示解包到当前目录
 	if unziptodir!='' and not os.path.exists(unziptodir):
@@ -164,7 +169,7 @@ def getVersion():
 	versionStr='%s.%s.%s' %(versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'])
 	return versionStr
 
-def cpVersion():
+def cpVersion(tp):
 	f = open('_Version.inf')
 	verName=''
 	verFull=[]
@@ -197,25 +202,27 @@ def cpVersion():
 	fw.close()
 	cmd('copy /y config\\version.xml .Update\\config\\')
 	cmd('copy /y engine\\version.xml .Update\\engine\\')
+	# cmd('echo Version %s.%s.%s>.Update\\Version.%s.%s.%s.%s.upd' %(verMain,verBuild,verDate,verMain,verBuild,verDate,tp))
 
 def rmVersion():
 	cmd('del /q .Update\\config\\version.xml')
 	cmd('del /q .Update\\engine\\version.xml')
 
-def makeUpdPackage():
+def makeUpdPackage(tp):
 	#updv=linecache.getline('_Version', 1).replace(' ','_').replace('.','_')
 	#package('.Update/','_update','update_%s' %(updv))
-	package('.Update','.Package\\packages\\update_%s.zip' %(getVersion()))
+	# return package('.Update','.Package\\packages\\update_%s.zip' %(getVersion()))
+	return package('.Update','.Package\\packages\\update_%s.%s' %(getVersion(),tp))
 
 def uploadUpdPackage():
 	updList=os.listdir('.Package\\packages\\')
 	updList.sort()
 	upload('.Package\\packages\\','%s' %(updList[len(updList)-1]))
 
-def uploadUpdDatabase():
+def uploadUpdDatabase(tp):
 	getVersion()
 	#strHtml = urllib2.urlopen(addrAddress).read()
-	strHtml = urllib2.urlopen('%supd_database.php?state=updversion&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'].replace(' ','%20'))).read()
+	strHtml = urllib2.urlopen('%supd_database.php?state=updversion&mainVersion=%s&buildVersion=%s&dateVersion=%s&versionName=%s&updfileType=%s' %(addrAddress,versionList['mainVersion'],versionList['buildVersion'],versionList['dateVersion'],versionList['versionName'].replace(' ','%20'),tp)).read()
 	print strHtml
 
 def applyUpdDatabase():

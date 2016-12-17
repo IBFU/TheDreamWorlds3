@@ -137,7 +137,7 @@ def package(dirname,zipfilename):#´ò°ü£¬²ÎÊý£ºÎÄ¼þ£¨¼Ð£©Ã
 		# print '#ERROR: %s - %s' %(Exception,e)
 		return False
 
-def unpackage(zipfilename, unziptodir):#½â°ü£¬²ÎÊý£º°üÃû£¬ÎÄ¼þ¼ÐÃû¡£unziptodirÁô¿Õ±íÊ¾½â°üµ½µ±Ç°Ä¿Â¼
+def unpackage_zip(zipfilename, unziptodir):#½â°ü£¬²ÎÊý£º°üÃû£¬ÎÄ¼þ¼ÐÃû¡£unziptodirÁô¿Õ±íÊ¾½â°üµ½µ±Ç°Ä¿Â¼
 	outLog('unPackage File')
 	if unziptodir!='' and not os.path.exists(unziptodir):
 		os.mkdir(unziptodir)
@@ -179,6 +179,11 @@ def unpackage(zipfilename, unziptodir):#½â°ü£¬²ÎÊý£º°üÃû£¬ÎÄ
 		# print '#ERROR: %s - %s' %(Exception,e)
 		return False
 
+def unpackage(zipfilename, unziptodir):
+	outLog('#TEST: FileName: %s toDir: %s' %(zipfilename, unziptodir))
+	cmd('%s' %(zipfilename))
+	return True
+
 def download(local,nfile):
 	#addrServer=("http://%s/%s/" %(addrIP,addrFolder))
 	addrServer='%s%s' %(config['coreServer'],config['updateDir'])
@@ -202,7 +207,6 @@ def download(local,nfile):
 		outLog('***Exception: %s Error: %s***' %(Exception,e))
 		# print Exception,ex
 		return -2
-	
 
 def getVersion():
 	global versionList
@@ -252,9 +256,18 @@ def applyPackage():
 	for pl in packageList:
 		ustr=unpackage(pl,'')
 		outLog('Package apply: %s %s' %(pl,ustr))
-		# if ustr!=False:
-		cmd('del %s' %(pl))
-		outLog('Package drop: %s' %(pl))
+		# updS=False
+		# if os.path.exists('Version.%s.upd' %(pl)):
+		# 	updS=True
+		# else:
+		# 	updS=False
+		# outLog('Unpackage state: %s' %(updS))
+		if ustr==True:
+			cmd('del %s' %(pl))
+			# cmd('del "Version.%s.upd"' %(pl))
+			outLog('Package Applyed. drop: %s' %(pl))
+		else:
+			outLog('Package Apply failed. notdrop: %s' %(pl))
 			#dropPackage()
 	if ustr:
 		outLog('updFinish')

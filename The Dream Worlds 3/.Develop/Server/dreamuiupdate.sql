@@ -25,6 +25,7 @@ CREATE TABLE `tdw3_version` (
   `buildVersion` int(11) DEFAULT NULL,
   `dateVersion` varchar(255) DEFAULT NULL,
   `versionName` varchar(255) DEFAULT NULL,
+  `updfileType` varchar(255) DEFAULT NULL,
   `allowUpdate` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=gbk;
